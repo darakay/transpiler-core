@@ -1,4 +1,6 @@
-package com.darakay.transpiler.core;
+package com.darakay.transpiler.core.lang;
+
+import com.darakay.transpiler.core.*;
 
 import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;

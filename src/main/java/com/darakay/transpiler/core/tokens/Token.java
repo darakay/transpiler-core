@@ -1,4 +1,4 @@
-package com.darakay.transpiler.core;
+package com.darakay.transpiler.core.tokens;
 
 import java.util.Objects;
 

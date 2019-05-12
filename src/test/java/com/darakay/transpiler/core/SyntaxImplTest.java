@@ -1,5 +1,9 @@
 package com.darakay.transpiler.core;
 
+import com.darakay.transpiler.core.lang.SyntaxImpl;
+import com.darakay.transpiler.core.tokens.BracketType;
+import com.darakay.transpiler.core.tokens.Token;
+import com.darakay.transpiler.core.tokens.TokenType;
 import org.junit.BeforeClass;
 import org.junit.Test;
 

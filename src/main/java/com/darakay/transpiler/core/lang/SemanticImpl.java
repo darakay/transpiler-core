@@ -1,4 +1,8 @@
-package com.darakay.transpiler.core;
+package com.darakay.transpiler.core.lang;
+
+import com.darakay.transpiler.core.tokens.PreparedToken;
+import com.darakay.transpiler.core.tokens.Token;
+import com.darakay.transpiler.core.exceptions.UnknownSemanticNodeType;
 
 import java.util.HashMap;
 import java.util.function.Function;

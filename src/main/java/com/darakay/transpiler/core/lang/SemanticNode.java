@@ -1,4 +1,4 @@
-package com.darakay.transpiler.core;
+package com.darakay.transpiler.core.lang;
 
 import java.util.Objects;
 

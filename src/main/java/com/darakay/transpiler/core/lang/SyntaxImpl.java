@@ -1,9 +1,13 @@
-package com.darakay.transpiler.core;
+package com.darakay.transpiler.core.lang;
+
+import com.darakay.transpiler.core.tokens.BracketType;
+import com.darakay.transpiler.core.tokens.Token;
+import com.darakay.transpiler.core.tokens.TokenType;
 
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class SyntaxImpl implements Syntax{
+public class SyntaxImpl implements Syntax {
     private HashMap<String, String> paired;
     private HashSet<String> unpaired;
 
