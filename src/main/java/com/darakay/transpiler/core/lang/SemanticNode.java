@@ -2,9 +2,9 @@ package com.darakay.transpiler.core.lang;
 
 import java.util.Objects;
 
-class SemanticNode {
+public class SemanticNode {
     private SemanticNodeType type;
-    SemanticNode(SemanticNodeType type) {
+    public SemanticNode(SemanticNodeType type) {
         this.type = type;
     }
 

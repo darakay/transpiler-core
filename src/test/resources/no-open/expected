@@ -1,0 +1,12 @@
+[
+  {
+    "value": "hello",
+    "term": false,
+    "bt": "NO"
+  },
+  {
+    "value": "</em>",
+    "term": false,
+    "bt": "NO"
+  }
+]

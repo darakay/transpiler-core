@@ -1,0 +1,14 @@
+[
+  {
+    "value": "<em>",
+    "term": true
+  },
+  {
+    "value": "hello",
+    "term": false
+  },
+  {
+    "value": "</b>",
+    "term": true
+  }
+]

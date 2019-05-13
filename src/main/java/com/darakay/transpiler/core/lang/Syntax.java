@@ -6,5 +6,5 @@ import com.darakay.transpiler.core.tokens.Token;
 public interface Syntax {
     boolean arePairedTokens(Token open, Token closed);
     BracketType getBracketType(Token token);
-    public Token getClosedTokenByOpen(Token open);
+    Token getClosedTokenByOpen(Token open);
 }

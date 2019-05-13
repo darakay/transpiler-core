@@ -1,5 +1,12 @@
 package com.darakay.transpiler.core;
 
+import com.darakay.transpiler.core.lang.Semantic;
+import com.darakay.transpiler.core.lang.SemanticImpl;
+import com.darakay.transpiler.core.lang.SemanticNode;
+import com.darakay.transpiler.core.lang.SemanticNodeType;
+import com.darakay.transpiler.core.tokens.Token;
+import com.darakay.transpiler.core.tokens.TokenType;
+
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.function.Function;
@@ -21,7 +28,7 @@ public class TestSemanticProvider implements SemanticProvider {
     @Override
     public Semantic getSemantic() {
         try {
-            Class clazz = Class.forName("com.darakay.transpiler.core.SemanticImpl");
+            Class clazz = Class.forName("com.darakay.transpiler.core.lang.SemanticImpl");
             SemanticImpl semantic = (SemanticImpl) clazz.newInstance();
             Field field1 = clazz.getDeclaredField("treeFuncs");
             Field field2 = clazz.getDeclaredField("convertingFuncs");

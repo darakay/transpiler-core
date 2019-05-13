@@ -1,0 +1,22 @@
+[
+  {
+    "value": "<em>",
+    "term": true
+  },
+  {
+    "value": "<b>",
+    "term": true
+  },
+  {
+    "value": "hello",
+    "term": false
+  },
+  {
+    "value": "</b>",
+    "term": true
+  },
+  {
+    "value": "</em>",
+    "term": true
+  }
+]

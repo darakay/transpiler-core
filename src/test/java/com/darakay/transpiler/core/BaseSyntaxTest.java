@@ -1,6 +1,7 @@
 package com.darakay.transpiler.core;
 
-import com.darakay.transpiler.core.lang.SyntaxImpl;
+import com.darakay.transpiler.core.lang.BaseSyntax;
+import com.darakay.transpiler.core.lang.Syntax;
 import com.darakay.transpiler.core.tokens.BracketType;
 import com.darakay.transpiler.core.tokens.Token;
 import com.darakay.transpiler.core.tokens.TokenType;
@@ -13,17 +14,12 @@ import java.util.HashSet;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-public class SyntaxImplTest {
-    private static SyntaxImpl syntax;
+public class BaseSyntaxTest {
+    private static Syntax syntax;
 
     @BeforeClass
     public static void setUp() throws Exception {
-        HashMap<String, String> map = new HashMap<>();
-        map.put("<h1>", "</h1>");
-        map.put("<em>", "</em>");
-        HashSet<String> set = new HashSet<>();
-        set.add("<a>");
-        syntax = new SyntaxImpl(map, set);
+        syntax = new TestSyntaxProvider().getSyntax();
     }
 
     @Test

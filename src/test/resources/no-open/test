@@ -1,0 +1,10 @@
+[
+  {
+    "value": "hello",
+    "term": false
+  },
+  {
+    "value": "</em>",
+    "term": true
+  }
+]

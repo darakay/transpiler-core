@@ -1,0 +1,17 @@
+[
+  {
+    "value": "<em>",
+    "term": true,
+    "bt": "OPEN"
+  },
+  {
+    "value": "hello",
+    "term": false,
+    "bt": "NO"
+  },
+  {
+    "value": "</em>",
+    "term": true,
+    "bt": "CLOSED"
+  }
+]

@@ -7,14 +7,11 @@ import com.darakay.transpiler.core.tokens.TokenType;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class SyntaxImpl implements Syntax {
+public class BaseSyntax implements Syntax {
     private HashMap<String, String> paired;
     private HashSet<String> unpaired;
 
-    SyntaxImpl(HashMap<String, String> paired, HashSet<String> unpaired) {
-        this.paired = paired;
-        this.unpaired = unpaired;
-    }
+    public BaseSyntax(){}
 
     @Override
     public boolean arePairedTokens(Token open, Token closed){
