@@ -1,15 +1,35 @@
-package com.darakay.transpiler.core.lang;
+package com.darakay.transpiler.core.semantic;
 
 import java.util.Objects;
 
 public class SemanticNode {
     private SemanticNodeType type;
+    private boolean isTerminate;
+    private StringBuilder innerText;
+
     public SemanticNode(SemanticNodeType type) {
         this.type = type;
     }
 
-    SemanticNodeType type() {
+    public SemanticNode(SemanticNodeType type, boolean isTerminate){
+        this.isTerminate = isTerminate;
+        this.type = type;
+    }
+
+    public SemanticNodeType type() {
         return type;
+    }
+
+    boolean isTerminate() {
+        return isTerminate;
+    }
+
+    public void addText(String text){
+        this.innerText.append(text);
+    }
+
+    public String getInnerText(){
+        return innerText.toString();
     }
 
     @Override

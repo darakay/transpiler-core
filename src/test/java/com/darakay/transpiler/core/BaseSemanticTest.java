@@ -2,8 +2,8 @@ package com.darakay.transpiler.core;
 
 import com.darakay.transpiler.core.exceptions.UnknownSemanticNodeType;
 import com.darakay.transpiler.core.lang.Semantic;
-import com.darakay.transpiler.core.lang.SemanticNode;
-import com.darakay.transpiler.core.lang.SemanticNodeType;
+import com.darakay.transpiler.core.semantic.SemanticNode;
+import com.darakay.transpiler.core.semantic.SemanticNodeType;
 import com.darakay.transpiler.core.tokens.BracketType;
 import com.darakay.transpiler.core.tokens.PreparedToken;
 import com.darakay.transpiler.core.tokens.Token;
@@ -17,7 +17,7 @@ import java.util.function.Function;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-public class SemanticImplTest {
+public class BaseSemanticTest {
     private static TestSemanticProvider provider = new TestSemanticProvider();
     private static Semantic semantic;
 
